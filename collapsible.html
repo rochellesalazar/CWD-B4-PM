@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Collapsible</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="white">
+  <nav class="teal">
+      <div class="container">
+      <a href="" class="brand-logo">Rochelle Salazar</a>
+  </div>
+  </nav>
+            <!--Collapsible-->
+<h1 class="grey-text text-lighten-3">Collapsible</h1>
+<div class="row">
+    <div class="col s12 m2">
+    <ul class="collapsible">
+        <li>
+            <div class="white collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="blue collapsible-header"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body blue"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="pink collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body pink"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li> 
+    </div>
+    </ul>
+</div>
+
+<h1 class="grey-text text-lighten-3">Expandable</h1>
+<div class="col s12 m12">  
+    <ul class="collapsible expandable">
+        <li class="active">
+            <div class="white collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="blue collapsible-header"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body blue"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="pink collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body pink"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li> 
+    </div>
+  </div>
+    </ul>
+
+
+     <!-- Jquery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+
+    $('.collapsible').collapsible({
+        inDuration: 300,
+        outDuration: 300,
+        accordion: false
+    });
+
+</script>
+</body>
+</html>
